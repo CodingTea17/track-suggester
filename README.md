@@ -5,7 +5,7 @@
 #### By _**Dawson Mortenson**_
 
 ## Description
-This is the second solo project at Epicodus. It takes a user's input in the form of a survey that generates a match score for different tracks at Epicodus. Then tells them there best match. It also allows them to see all the data associated with their results.
+This is the second solo project at Epicodus. It takes a user's input in the form of a survey and generates a match score for different tracks at Epicodus. Then tells them their best match. It also allows them to see all the data associated with their answers. This survey is not intended to produce accurate results as it is based off my own opinions. 
 
 ## Installation
 

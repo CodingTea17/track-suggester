@@ -115,6 +115,8 @@ $(document).ready(function() {
   // Wait for a submit event to occur in the form 'user-input'
   $("form#user-input").submit(function(event) {
     event.preventDefault();
+
+    if($("#name").val() != ''){
     // Gather data from the form called 'user-input' and store it in vars
     var u_name = $("#name").val();
     var u_type = parseInt($("input:radio[name=user-type]:checked").val());
@@ -162,6 +164,11 @@ $(document).ready(function() {
     $("#java-match").text("Java/Android Track: "  + java_match + "% Match");
     $("#php-match").text("PHP/Drupal Track: "  + php_match + "% Match");
     $("#ruby-match").text("Ruby/Rails Track: "  + ruby_match + "% Match.");
+    } else {
+      alert("Please Enter Your Name Before Continuing");
+      $("#name-input-group").addClass('has-danger');
+      $("#name").addClass('form-control-danger');
+    }
   });
 
   // Once clicked it hides your best match and shows you all the data

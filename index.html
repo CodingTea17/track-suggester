@@ -30,16 +30,16 @@
                 <!-- GET USER'S NAME ROW -->
                 <!-- TYPE = TEXT INPUT-->
                 <div class="form-group row" id="name-input-group">
-                  <label for="name" class="col-2 col-form-label">Your Name:</label>
-                  <div class="col-10">
+                  <label for="name" class="col-lg-2 col-form-label">Your Name:</label>
+                  <div class="col-lg-10">
                     <input class="form-control" type="text" id="name">
                   </div>
                 </div>
                 <!-- GET USER TYPE ROW -->
                 <!-- TYPE = RADIO -->
-                <div class="row">
-                  <div class="col-12">
-                    <legend>I Am...</legend>
+                <fieldset class="form-group row">
+                  <legend class="col-form-legend col-lg-2">I Am...</legend>
+                  <div class="col-lg-10">
                     <div class="form-check">
                       <label class="form-check-label">
                         <input type="radio" class="form-check-input" name="user-type" value="1" checked>
@@ -59,19 +59,19 @@
                       </label>
                     </div>
                   </div>
-                </div>
+                </fieldset>
                 <!-- GET USER'S INTENT ROW -->
                 <!-- TYPE = RADIO -->
-                <div class="row">
-                  <div class="col-12">
-                    <legend>I Want To...</legend>
+                <fieldset class="form-group row">
+                  <legend class="col-form-legend col-lg-2">I Want To...</legend>
+                  <div class="col-lg-10">
                     <div class="form-check">
                       <label class="form-check-label">
                         <input type="radio" class="form-check-input" name="user-intent" value="1" checked>
                         Work A 9-5 As A Coder Fixing Bugs And Updating Exisiting Code.
                       </label>
                     </div>
-                    <div class="form-check ">
+                    <div class="form-check">
                       <label class="form-check-label">
                         <input type="radio" class="form-check-input" name="user-intent" value="2">
                         Create An Interactive Application That Has Users.
@@ -90,12 +90,12 @@
                       </label>
                     </div>
                   </div>
-                </div>
+                </fieldset>
                 <!-- GET USER'S "AGE" ROW -->
                 <!-- TYPE = RADIO -->
-                <div class="row">
-                  <div class="col-12">
-                    <legend>Do You Like To Be On The Forefront of Newer Technologies: </legend>
+                <fieldset class="form-group row">
+                  <legend class="col-form-legend col-lg-4">Do You Like Newer Technologies: </legend>
+                  <div class="col-lg-8">
                     <div class="form-check">
                       <label class="form-check-label">
                         <input type="radio" class="form-check-input" name="user-age" value="1" checked>
@@ -109,7 +109,7 @@
                       </label>
                     </div>
                   </div>
-                </div>
+                </fieldset>
                 <!-- GET USER'S PREFFERED WORK ENVIRONMENT ROW -->
                 <!-- TYPE = SELECT -->
                 <div class="form-group row">
@@ -140,13 +140,11 @@
                 <button type="submit" class="btn btn-outline-success btn-lg btn-block">Get Your Result</button>
               </form>
               <div id="results">
-                <h3>
-                  <span id="name-results"></span><br/>
-                </h3>
+                <h3><span id="name-results"></span></h3>
                 <p>
-                  <span id="best-match"></span><br/>
+                  <span id="best-match"></span>
                 </p>
-                <button type="click" class="btn btn-outline-primary btn-lg btn-block" id="show-all">Show All Match Data</button>
+                <button type="button" class="btn btn-outline-primary btn-lg btn-block" id="show-all">Show All Match Data</button>
               </div>
               <div id="all-results">
                 <ul>

@@ -9,3 +9,11 @@
 .row {
   margin-bottom: 30px;
 }
+
+#results {
+  display: none;
+}
+
+#all-results {
+  display: none;
+}

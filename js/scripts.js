@@ -16,7 +16,7 @@ var determineDesignMatch = function(choice_num1, choice_num2, choice_num3, choic
   if(choice_num5 === 1){
     match_points += 1;
   }
-  match_score = ((match_points / (10/3)) * 100);
+  match_score = ((match_points / (10/3)) * 100).toFixed();
   return match_score;
 };
 var determineNetMatch = function(choice_num1, choice_num2, choice_num3, choice_num4, choice_num5) {
@@ -35,7 +35,7 @@ var determineNetMatch = function(choice_num1, choice_num2, choice_num3, choice_n
   if((choice_num4 === 1) || (choice_num2 === 2)){
     match_points += (1/2);
   }
-  match_score = ((match_points / 3) * 100);
+  match_score = ((match_points / 3) * 100).toFixed();
   return match_score;
 };
 var determineJavaMatch = function(choice_num1, choice_num2, choice_num3, choice_num4, choice_num5) {
@@ -57,7 +57,7 @@ var determineJavaMatch = function(choice_num1, choice_num2, choice_num3, choice_
   if(choice_num5 === 2){
     match_points += 1;
   }
-  match_score = ((match_points / (9/2)) * 100);
+  match_score = ((match_points / (9/2)) * 100).toFixed();
   return match_score;
 };
 var determinePhpMatch = function(choice_num1, choice_num2, choice_num3, choice_num4, choice_num5) {
@@ -76,7 +76,7 @@ var determinePhpMatch = function(choice_num1, choice_num2, choice_num3, choice_n
   if((choice_num4 === 5) || (choice_num4 === 4) || (choice_num4 === 3)){
     match_points += (1/3);
   }
-  match_score = ((match_points / (7/3)) * 100);
+  match_score = ((match_points / (7/3)) * 100).toFixed();
   return match_score;
 };
 var determineRubyMatch = function(choice_num1, choice_num2, choice_num3, choice_num4, choice_num5) {
@@ -95,7 +95,7 @@ var determineRubyMatch = function(choice_num1, choice_num2, choice_num3, choice_
   if((choice_num4 === 3) || (choice_num4 === 4)){
     match_points += (1/2);
   }
-  match_score = ((match_points / (7/2)) * 100);
+  match_score = ((match_points / (7/2)) * 100).toFixed();
   return match_score;
 };
 

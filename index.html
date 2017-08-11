@@ -8,8 +8,34 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-inverse">
-      <h1 class="navbar-brand mb-0">Track Selector</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse">
+      <h1 class="navbar-brand mb-0">Track Suggester</h1>
     </nav>
+    <!-- PAGE CONTAINER -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- FORM CARD HOLDS THE FOR WITHIN ITSELF -->
+          <div class="card">
+            <div class="card-header">
+              Find Out The Best Epicodus Track For You
+            </div>
+            <div class="card-block">
+              <!-- <h4 class="card-title">Find Out The Best Epicodus Track For You</h4> -->
+              <!-- FORM -->
+              <form id="user-input">
+                <div class="form-group row">
+                  <label for="name" class="col-2 col-form-label">Your Name:</label>
+                  <div class="col-10">
+                    <input class="form-control" type="text" id="name">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -5,9 +5,17 @@ $(document).ready(function() {
     event.preventDefault();
     // Gather data from the form called 'user-input' and store it in vars
     var u_name = $("#name").val();
-    var company_size = $("#work-environment").val();
+    var u_age = parseInt($("input:radio[name=user-age]:checked").val());
+    var u_type = parseInt($("input:radio[name=user-type]:checked").val());
+    var u_intent = parseInt($("input:radio[name=user-intent]:checked").val());
+    var u_enviro = parseInt($("#work-environment").val());
+    var u_os = parseInt($("#phone-os").val());
 
     alert(u_name);
-    alert(company_size);
+    alert(u_age)
+    alert(u_type);
+    alert(u_intent);
+    alert(u_enviro);
+    alert(u_os);
   });
 });

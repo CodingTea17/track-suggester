@@ -4,6 +4,9 @@
     <title>Track Suggester</title>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- I AM USING BOOTSTRAP V4 -->
+    <!-- IT HAS A FEW MINOR DIFFERENCES AND IS STILL IN ALPHA -->
+    <!-- BUT THE IMPROVEMENT IN DESIGN IS WORTH IT -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
@@ -22,46 +25,118 @@
               Find Out The Best Epicodus Track For You
             </div>
             <div class="card-block">
-              <!-- <h4 class="card-title">Find Out The Best Epicodus Track For You</h4> -->
               <!-- FORM -->
               <form id="user-input">
+                <!-- GET USER'S NAME ROW -->
+                <!-- TYPE = TEXT INPUT-->
                 <div class="form-group row">
                   <label for="name" class="col-2 col-form-label">Your Name:</label>
                   <div class="col-10">
                     <input class="form-control" type="text" id="name">
                   </div>
                 </div>
+                <!-- GET USER TYPE ROW -->
+                <!-- TYPE = RADIO -->
+                <div class="row">
+                  <div class="col-12">
+                    <legend>I Am...</legend>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-type" value="1" checked>
+                        An Artsy Person. I Like The Design of Websites.
+                      </label>
+                    </div>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-type" value="2">
+                        An Engineer. I Like The Functionality Of Websites.
+                      </label>
+                    </div>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-type" value="3">
+                        A Blissful Drone. I Like To Code.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- GET USER'S INTENT ROW -->
+                <!-- TYPE = RADIO -->
+                <div class="row">
+                  <div class="col-12">
+                    <legend>I Want To...</legend>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-intent" value="1" checked>
+                        Work A 9-5 As A Coder Fixing Bugs And Updating Exisiting Code.
+                      </label>
+                    </div>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-intent" value="2">
+                        Create An Interactive Application That Has Users And/Or Work For A Startup.
+                      </label>
+                    </div>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-intent" value="3">
+                        Work With Businesses To Assist In Content Management.
+                      </label>
+                    </div>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-intent" value="4">
+                        None of The Above
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- GET USER'S "AGE" ROW -->
+                <!-- TYPE = RADIO -->
+                <div class="row">
+                  <div class="col-12">
+                    <legend>Do You Like To Be On The Forefront of Newer Technologies: </legend>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-age" value="1" checked>
+                        Yes. I Want To Learn A Newer And In Demand Programming Langauge.
+                      </label>
+                    </div>
+                    <div class="form-check form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="user-age" value="2">
+                        No. "If It Ain't Broke; Don't Fix It".
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- GET USER'S PREFFERED WORK ENVIRONMENT ROW -->
+                <!-- TYPE = SELECT -->
                 <div class="form-group row">
-                  <label for="work-environment" class="col-4 col-form-label">Do You See Yourself Working For: </label>
-                  <div class="col-8">
+                  <label for="work-environment" class="col-6 col-form-label">Do You See Yourself Working For A Company That Is: </label>
+                  <div class="col-6">
                     <select class="form-control" id="work-environment">
-                      <option>Large Sized >= 10,000 (e.g. Microsoft, Google, etc.)</option>
-                      <option>Medium Sized >= 1,000 (e.g. NewRelic, Yelp, etc.)</option>
-                      <option>Small Sized >= 100 (e.g. Eventbrite, Etsy, etc.)</option>
-                      <option>Startup Sized < 100 (e.g. Planet Argon, ThinkShout, etc.) </option>
-                      <option>N/A (eg. Freelancer)</option>
+                      <option value="1">Large Sized >= 10,000 Employees (e.g. Microsoft, Google, etc.)</option>
+                      <option value="2">Medium Sized >= 1,000 Employees (e.g. NewRelic, Yelp, etc.)</option>
+                      <option value="3">Small Sized >= 100 Employees (e.g. Eventbrite, Etsy, etc.)</option>
+                      <option value="4">Startup Sized < 100 Employees (e.g. Planet Argon, ThinkShout, etc.) </option>
+                      <option value="5">N/A (eg. Freelancer)</option>
                     </select>
                   </div>
                 </div>
-                  <!-- <legend>Do you want to develop Websites or Software Applications</legend> -->
-                <div class="row">
-                  <div class="col-12">
-
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="development" value="1" checked>
-                      I Want to Create Websites
-                    </label>
+                <!-- GET USER'S PHONE OS -->
+                <!-- TYPE = SELECT -->
+                <div class="form-group row">
+                  <label for="phone-os" class="col-6 col-form-label">What OS Does Your Phone Run?: </label>
+                  <div class="col-6">
+                    <select class="form-control" id="phone-os">
+                      <option value="1">Apple iOS</option>
+                      <option value="2">Android</option>
+                      <option value="3">Other (Tizen OS, Windows 10 Mobile)</option>
+                    </select>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="development" value="2">
-                      I want to Write Software Applications
-                    </label>
-                  </div>
-
                 </div>
-                </div>
+                <!-- SUBMIT FORM BUTTON -->
                 <button type="submit" class="btn btn-outline-success btn-lg btn-block">Get Your Result</button>
               </form>
             </div>

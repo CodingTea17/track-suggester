@@ -1,8 +1,11 @@
 .navbar {
-  background-color: #3f51b5;
+  background-color: #283593;
   margin-bottom: 50px;
 }
 .card-header {
-  background-color: #9fa8da;
+  background-color: #5c6bc0;
   color: #FFFFFF;
+}
+.row {
+  margin-bottom: 30px;
 }

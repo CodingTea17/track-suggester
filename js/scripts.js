@@ -147,7 +147,7 @@ $(document).ready(function() {
     }else if (best_match_number === parseInt(ruby_match)) {
       $("#best-match").text("The Ruby/Rails Track. You had a "  + ruby_match + "% Match.");
     }else {
-      alert("Error unforseen error detected. Try reloading the page and filling out the survey again.")
+      alert("Error unforseen error detected. Try reloading the page and filling out the survey again.");
     }
     // Hides the form
     $("form#user-input").hide();
